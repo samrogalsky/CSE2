@@ -2,7 +2,7 @@
 //November 18, 2014
 //CSE 02
 //Lab 12
-//ArrayMath java program - does basic math and comparisons on arrays using methods
+//ArrayMath java program - does basic math and comparisons on arrays using method
 public class ArrayMath {
     public static void main(String[] arg) {
         double x[] = {
