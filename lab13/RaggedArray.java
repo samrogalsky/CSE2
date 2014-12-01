@@ -2,7 +2,7 @@
 //November 30, 2014
 //CSE 02
 //Lab 13
-//Ragged Array Java Program - fills ragged arrays and then sorts them 
+//Ragged Array Java Program - fills ragged arrays and then sorts them using a bubble sort
 public class RaggedArray {
     public static void main(String[] arg) {
         int[][] a = new int[5][];
