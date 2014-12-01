@@ -2,7 +2,7 @@
 //October 24, 2014
 //CSE 02
 //Lab 09
-//Methods java program - tells the user if or if not the three entered ints are in ascending order
+//Methods Java Program - tells the user if or if not the three entered ints are in ascending order
 
 import java.util.Scanner;
 public class Methods{
