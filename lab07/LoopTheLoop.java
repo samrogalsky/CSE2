@@ -2,7 +2,7 @@
 //October 10, 2014
 //CSE 02
 //Lab 07
-//Loop The Loop Java Program - displays stars according to user enterd int
+//Loop The Loop Java Program - displays stars in accordance to user enterd int
 
 import java.util.Scanner; //import scanner to accept input
 
