@@ -2,7 +2,7 @@
 //November 14, 2014
 //CSE 02
 //Lab 11
-//Arrays java program - asks user to enter ints, makes into an array, gets certain info out of the array
+//Arrays java program - asks user to enter ints, makes into an array, gets certain info out of the arrays
 import java.util.Scanner;
 public class Arrays{
     public static void main(String [] args){
