@@ -1,8 +1,8 @@
 //Samuel Rogalsky  
 //November 18, 2014
 //CSE 02
-//Hw 10
-//
+//Hw10
+//Poker odds program - gives the user a random hand of 5 cards and then tells the user the probability of having one duplicate of each type of card
 import java.util.Random;
 import java.util.Scanner;
 public class PokerOdds {
@@ -97,10 +97,10 @@ public class PokerOdds {
             }
             if (exactlyOneDup(hand)) {//if the method exactlyOneDup of hand is true, else 
                 for (int i = 0; i < hand.length; i++) {//for statement that runs for the length of hand array. 
-                    for (int j = 1 + i; j < hand.length; j++) {//for statment that runs for the length of the hand array, but will start one more than the outer loop is on
+                    for (int j = i + 1; j < hand.length; j++) {//for statment that runs for the length of the hand array, but will start one more than the outer loop is on
                         if (hand[i] == hand[j]) {//if these values are equal, 
-                            int num = hand[j];
-                            dups[num] ++;//dups array of that value will incriment, assaigning a number correspoinding to each card rank. 
+                            int num = hand[i];
+                            dups[num]++;//dups array of that value will incriment, assaigning a number correspoinding to each card rank. 
                         }
                     }
                 }
@@ -118,10 +118,9 @@ public class PokerOdds {
     }
     public static void changeDeck(int array1[], int array2[]) {//method that takes the drawn card out, replaces it with the last card in the deck that is not a -1. Puts a -1 in that last card's place
         for (int i = 0; i < array1.length; i++) {//for loop that will run for the length of the provided array1
-            for (int j = 0; j < array2.length; j++) {//for loop that will run for the length of the provided array2
-                if (array1[i] == j) {//if array of i equals the j incrimentor, then the cards are equal since in the deck the value equals the number representing it
-                    int num = j;
-                    array2[num] = array2[51-i];
+            for (int j = 0 ; j < array2.length; j++) {//for loop that will run for the length of the provided array2
+                if (array1[i] == j ) {//if array of i equals the j incrimentor, then the cards are equal since in the deck the value equals the number representing it
+                    array2[j] = array2[51 - i];
                     array2[51 - i] = -1;
                 }
             }
@@ -147,10 +146,11 @@ public class PokerOdds {
             array[i] = i;//assaignes the array value to the number that indiactes that value
         }
     }
-    public static void evalArray2(int array[]) {//method that gives the array provided random numbers
+    public static int[] evalArray2(int array[]) {//method that gives the array provided random numbers
         Random randomNum = new Random();
         for (int i = 0; i < array.length; i++) {//loop that runs for the length of the array provided
             array[i] = randomNum.nextInt(52);//gives random number
         }
+        return array;
     }
 }
