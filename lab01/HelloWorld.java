@@ -1,5 +1,5 @@
 //Samuel Rogalsky
-//Lab01
+//Lab 01
 //CSE 02
 //Hello World Java Program
 
