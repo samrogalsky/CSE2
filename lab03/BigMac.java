@@ -1,7 +1,7 @@
 //Samuel Rogalsky
 //September 12, 2014
 //CSE 02
-//Lab - 03
+//Lab03
 //Big Mac Java Program
 import java.util.Scanner;//Scanner goes first to avoid compiler errors
 
